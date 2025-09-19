@@ -3,3 +3,17 @@ fluttergreen/
     ├── app.py
     ├── requirements.txt
     ├── render.yaml
+requirements.txt
+
+Flask
+flask-cors
+
+render.yaml(used by Render to auto-deploy)
+
+services:
+  - type: web
+    name: fluttergreen-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
