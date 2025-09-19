@@ -1,0 +1,14 @@
+fluttergreen/
+├── backend/
+│   ├── app.py               # Flask API
+│   ├── models.py            # DB Models
+│   ├── finance_routes.py    # Finance routes
+│   └── database.db          # SQLite DB (for dev)
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
